@@ -1,0 +1,6 @@
+Pipfile
+Pipfile.lock
+.DS_Store
+content/.ipynb_checkpoints
+_output
+.jupyterlite.doit.db

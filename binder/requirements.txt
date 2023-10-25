@@ -1,0 +1,9 @@
+jupyterlab~=3.5.1
+
+# Course libraries
+seaborn
+matplotlib
+pillow
+numpy
+pandas
+scipy
