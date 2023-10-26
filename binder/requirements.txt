@@ -1,8 +1,5 @@
-jupyterlab~=3.5.1
-
-# Course libraries
-seaborn
 matplotlib
+seaborn
 pillow
 numpy
 pandas
