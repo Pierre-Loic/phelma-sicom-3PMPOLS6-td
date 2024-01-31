@@ -4,5 +4,3 @@ pillow
 numpy
 pandas
 scipy
-tensorflow-cpu
-plotly

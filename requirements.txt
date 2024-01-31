@@ -19,4 +19,3 @@ matplotlib
 numpy
 scipy
 seaborn
-tensorflow-cpu
