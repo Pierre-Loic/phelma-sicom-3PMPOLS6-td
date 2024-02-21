@@ -35,6 +35,8 @@ conda env create -f environment.yml
 echo "Activation de l'environnement virtuel..."
 conda init bash
 conda activate tensorflow-env
+conda init bash
+conda activate tensorflow-env
 
 # Étape 5 : Lancer le Jupyter Lab
 echo "Lancement du Jupyter Lab..."
