@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Étape 1: Télécharger les fichiers nécessaires au TD
+# Étape 1 : Télécharger les fichiers nécessaires au TD
 echo "Téléchargement du fichier environment.yml..."
 wget https://gricad-gitlab.univ-grenoble-alpes.fr/phelma-sicom/1a/3pmpols6-td/-/raw/main/content/environment.yml -O ~/Downloads/environment.yml
 
@@ -14,7 +14,7 @@ wget https://gricad-gitlab.univ-grenoble-alpes.fr/phelma-sicom/1a/3pmpols6-td/-/
 wget https://gricad-gitlab.univ-grenoble-alpes.fr/phelma-sicom/1a/3pmpols6-td/-/raw/main/content/intranet.jpg -O ~/Downloads/intranet.jpg
 wget https://gricad-gitlab.univ-grenoble-alpes.fr/phelma-sicom/1a/3pmpols6-td/-/raw/main/content/phelma.jpg -O ~/Downloads/phelma.jpg
 
-# Étape 2: Aller dans le dossier des téléchargements
+# Étape 2 : Aller dans le dossier des téléchargements
 echo "Changement de répertoire vers le dossier Downloads..."
 cd ~/Downloads
 
@@ -27,6 +27,10 @@ else
     exit 1
 fi
 
-# Étape 3: Créer l'environnement virtuel et installer les bibliothèques
+# Étape 3 : Créer l'environnement virtuel et installer les bibliothèques
 echo "Création de l'environnement virtuel et installation des bibliothèques..."
 conda env create -f environment.yml
+
+# Étape 4 : Lancer le Jupyter Lab
+echo "Lancement du Jupyter Lab..."
+conda run -n tensorflow-env jupyter lab
